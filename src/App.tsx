@@ -1,8 +1,9 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import type { AlignedData, Options } from "uplot";
 import uPlot from "uplot";
 import "uplot/dist/uPlot.min.css";
 import "./App.css";
+import { filterData } from "./filterData";
 
 interface DataPoint {
   index: number;
@@ -14,6 +15,12 @@ interface DataPoint {
 function App() {
   const [data, setData] = useState<DataPoint[]>([]);
   const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    filterData().then((data) => {
+      console.log("data :>> ", data);
+    });
+  }, []);
 
   const parseFileContent = useCallback((content: string): DataPoint[] => {
     try {
