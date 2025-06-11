@@ -14,7 +14,8 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "recharts": "^2.15.3",
-    "uplot": "^1.6.32"
+    "uplot": "^1.6.32",
+    "wasm-pedometer": "file:wasm-pedometer/pkg"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",

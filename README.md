@@ -27,10 +27,17 @@ x1,y1,z1;x2,y2,z2;x3,y3,z3;...
 ## Getting Started
 
 1. Clone the repository
+   <!-- 2. Build the wasm-pedometer crate -->
+   <!-- ```bash
+      cargo install wasm-pack
+      wasm-pack build --target web
+      ``` -->
 2. Install dependencies:
+
    ```bash
    npm install
    ```
+
 3. Start the development server:
    ```bash
    npm run dev

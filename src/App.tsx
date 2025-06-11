@@ -1,8 +1,8 @@
-import React, { useState, useCallback } from "react";
-import "./App.css";
-import uPlot from "uplot";
+import React, { useCallback, useState } from "react";
 import type { AlignedData, Options } from "uplot";
+import uPlot from "uplot";
 import "uplot/dist/uPlot.min.css";
+import "./App.css";
 
 interface DataPoint {
   index: number;

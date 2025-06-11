@@ -1,0 +1,3 @@
+[submodule "pedometer-pipeline"]
+	path = pedometer-pipeline
+	url = https://github.com/whabbot/pedometer-pipeline.git
