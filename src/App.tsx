@@ -137,7 +137,8 @@ function App() {
         newChart.destroy();
       }
     };
-  }, [chart, data]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [data]);
 
   // Handle window resize
   React.useEffect(() => {
