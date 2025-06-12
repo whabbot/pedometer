@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useState } from "react";
 import type { AlignedData, Options } from "uplot";
 import uPlot from "uplot";
 import "uplot/dist/uPlot.min.css";
@@ -16,14 +16,13 @@ function App() {
   const [data, setData] = useState<DataPoint[]>([]);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-    filterData().then((data) => {
-      console.log("data :>> ", data);
-    });
-  }, []);
-
   const parseFileContent = useCallback((content: string): DataPoint[] => {
     try {
+      filterData(content).then((data) => {
+        console.log("filteredData", data);
+        return data;
+      });
+
       // Split by semicolon to get individual data points
       const points = content.trim().split(";");
 

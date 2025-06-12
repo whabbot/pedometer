@@ -1,6 +1,6 @@
 import init, { process_data } from "wasm-pedometer";
 
-export async function filterData(): Promise<number[]> {
+export async function filterData(data: string): Promise<number[]> {
   await init();
-  return Array.from(process_data());
+  return Array.from(process_data(data));
 }
