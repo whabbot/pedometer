@@ -2,8 +2,6 @@
 
 A lightweight, interactive web application for visualizing 3D coordinate data in a 2D line chart. Built with React, TypeScript, and uPlot for high-performance rendering.
 
-![3D Data Visualizer Screenshot](./public/screenshot.png)
-
 ## Features
 
 - 📊 Visualize 3D coordinate data in an interactive line chart
@@ -32,8 +30,8 @@ x1,y1,z1;x2,y2,z2;x3,y3,z3;...
    git clone https://github.com/whabbot/pedometer.git --recursive
    ```
 
-[!NOTE]  
-Note the `--recursive` flag, it will clone the submodules as well. If missed, you will need to run `git submodule update --init` to initialize the submodules.
+> [!NOTE]  
+> Note the `--recursive` flag, it will clone the submodules as well. If missed, you will need to run `git submodule update --init` to initialize the submodules.
 
 2. Build the wasm-pedometer crate
 
@@ -48,8 +46,8 @@ Note the `--recursive` flag, it will clone the submodules as well. If missed, yo
    npm install
    ```
 
-[!NOTE]  
-Note the `wasm-pedometer` dependency in the `package.json` file, it will use the wasm-pedometer crate created in the previous step.
+> [!NOTE]  
+> Note the `wasm-pedometer` dependency in the `package.json` file, it will use the wasm-pedometer crate created in the previous step.
 
 4. Start the development server:
    ```bash
