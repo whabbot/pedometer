@@ -7,3 +7,5 @@ pub fn process_data(data: String) -> Vec<f64> {
     println!("Result: {:?}", result);
     result
 }
+
+// https://github.com/RReverser/serde-wasm-bindgen?
