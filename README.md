@@ -27,33 +27,20 @@ x1,y1,z1;x2,y2,z2;x3,y3,z3;...
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/whabbot/pedometer.git --recursive
+   git clone https://github.com/whabbot/pedometer.git
    ```
 
-> [!NOTE]  
-> Note the `--recursive` flag, it will clone the submodules as well. If missed, you will need to run `git submodule update --init` to initialize the submodules.
-
-2. Build the wasm-pedometer crate
-
-   ```bash
-   cd wasm-pedometer
-   wasm-pack build --target web
-   ```
-
-3. Install dependencies:
+2. Install dependencies:
 
    ```bash
    npm install
    ```
 
-> [!NOTE]  
-> Note the `wasm-pedometer` dependency in the `package.json` file, it will use the wasm-pedometer crate created in the previous step.
-
-4. Start the development server:
+3. Start the development server:
    ```bash
    npm run dev
    ```
-5. Open [http://localhost:5173](http://localhost:5173) in your browser
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
 
 ## Technologies Used
 
@@ -64,6 +51,13 @@ x1,y1,z1;x2,y2,z2;x3,y3,z3;...
 - WebAssembly (WASM)
 - Rust
 - CSS3
+
+## Building the wasm-pedometer crate
+
+```bash
+cd frontend
+npm run build:wasm
+```
 
 ## License
 
