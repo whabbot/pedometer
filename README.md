@@ -67,4 +67,7 @@ x1,y1,z1;x2,y2,z2;x3,y3,z3;...
 
 ## License
 
-MIT
+The Rust code in rust-core is a port of the pedometer pipeline from [500 Lines or Less -
+A Pedometer in the Real World by Dessy Daskalov](https://aosabook.org/en/500L/a-pedometer-in-the-real-world.html)
+
+The original work is licensed under the [Creative Commons License](https://aosabook.org/en/license.html)
