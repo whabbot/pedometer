@@ -45,9 +45,9 @@ impl Parser {
         if raw_data[0].len() == 1 {
             let raw_data_len = raw_data.len();
             // [
-            //    [ x1, x2, x3 ],
-            //    [ y1, y2, y3 ],
-            //    [ z1, z2, z3 ],
+            //    [[ x1, x2, x3 ]],
+            //    [[ y1, y2, y3 ]],
+            //    [[ z1, z2, z3 ]],
             //]
             let components = utils::transpose(raw_data.into_iter().flatten().collect());
 
